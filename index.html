@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Dice Roller</title>
+		<link rel="shortcut icon" href="img/favicon.jpg" />
+		<link href="styles/styles.css" rel="stylesheet" type="text/css" />
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+			integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+			crossorigin="anonymous"
+		/>
+		<meta name="description" content="A Dice Roller Simulator" />
+		<meta name="author" content="Kyle Monk" />
+	</head>
+	<body>
+		<div id="box">
+			<h1>Dice Roller!</h1>
+
+			<p>Amount of Dice you want to Roll:</p>
+			<div class="selectContainer">
+				<p class="selectItem" id="1">One</p>
+				<p class="selectItem" id="2">Two</p>
+				<p class="selectItem" id="3">Three</p>
+				<p class="selectItem" id="4">Four</p>
+				<p class="selectItem selectItemSelected" id="5">Five</p>
+			</div>
+			<div class="container">
+				<div id="die1" class="item">
+					<i class="fas fa-dice-one"></i>
+				</div>
+				<div id="die2" class="item">
+					<i class="fas fa-dice-two"></i>
+				</div>
+				<div id="die3" class="item">
+					<i class="fas fa-dice-three"></i>
+				</div>
+				<div id="die4" class="item">
+					<i class="fas fa-dice-four"></i>
+				</div>
+				<div id="die5" class="item">
+					<i class="fas fa-dice-five"></i>
+				</div>
+			</div>
+			<h2 id="roll">ROLL!</h2>
+		</div>
+		<script src="js\script.js"></script>
+	</body>
+</html>
