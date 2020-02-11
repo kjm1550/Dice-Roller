@@ -15,6 +15,50 @@ let changeNumberOfDiceShowing = number => {
 	}
 };
 
+let randomRoll = numberOfRolls => {
+	let roll = [];
+	for (x = numberOfRolls; x > 0; x--) {
+		console.log('roll' + x);
+		roll.push(Math.floor(Math.random() * 6) + 1);
+	}
+	return roll;
+};
+
+let changeToText = numbers => {
+	for (x = 0; x <= numbers.length; x++) {
+		switch (numbers[x]) {
+			case 1:
+				numbers[x] = 'one';
+				break;
+			case 2:
+				numbers[x] = 'two';
+				break;
+			case 3:
+				numbers[x] = 'three';
+				break;
+			case 4:
+				numbers[x] = 'four';
+				break;
+			case 5:
+				numbers[x] = 'five';
+				break;
+			case 6:
+				numbers[x] = 'six';
+				break;
+		}
+	}
+	return numbers;
+};
+
+let changeTheDice = numbers => {
+	let currentClass;
+	for (x = 1; x <= numberOfDice; x++) {
+		currentClass = document.getElementById('die' + x + 'face').classList.item(1);
+		document.getElementById('die' + x + 'face').classList.remove(currentClass);
+		document.getElementById('die' + x + 'face').classList.add('fa-dice-' + numbers[x - 1]);
+	}
+};
+
 window.onload = function() {
 	document.getElementById('1').onclick = function() {
 		changeNumberOfDice(1);
@@ -41,5 +85,7 @@ window.onload = function() {
 		changeNumberOfDiceShowing(5);
 	};
 
-	document.getElementById('roll').onclick = function() {};
+	document.getElementById('roll').onclick = function() {
+		changeTheDice(changeToText(randomRoll(numberOfDice)));
+	};
 };
