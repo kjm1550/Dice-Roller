@@ -1,77 +1,76 @@
-:root {
-	--back-color: #98c1d9;
-	--second-color: #ee6c4d;
-	--main-color: #3d5a80;
-	--selected-color: #bc563c;
-	--hover-back-color: #293259;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-* {
-	padding: 0;
-	margin: 0;
-}
 html {
-	background-color: var(--back-color);
+  background-color: #98c1d9;
 }
 
 #box {
-	background-color: var(--main-color);
-	max-width: 600px;
-	margin: 15vh auto 0 auto;
-	padding: 50px;
-	border: 5px solid var(--second-color);
-	border-radius: 25px;
-	color: var(--second-color);
+  background-color: #3d5a80;
+  max-width: 600px;
+  margin: 15vh auto 0 auto;
+  padding: 50px;
+  border: 5px solid #ee6c4d;
+  border-radius: 25px;
+  color: #ee6c4d;
 }
 
 h1 {
-	text-align: center;
-	font-size: 3.5em;
+  text-align: center;
+  font-size: 3.5em;
 }
+
 p {
-	font-size: 1.8em;
-	text-align: center;
+  font-size: 1.8em;
+  text-align: center;
 }
+
 .selectContainer {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
-.selectItem {
-	margin: 20px 12px 0;
-	cursor: pointer;
+.selectContainer .selectItem {
+  margin: 20px 12px 0;
+  cursor: pointer;
 }
-.selectItemSelected {
-	color: var(--selected-color);
+.selectContainer .selectItemSelected {
+  color: #bc563c;
 }
 
 .container {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	margin: 22px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 22px 0;
 }
-i {
-	font-size: 125px;
-}
+
 .item {
-	margin: 10px 15px;
-	width: 125px;
-	height: 125px;
-	text-align: center;
+  margin: 10px 15px;
+  width: 125px;
+  height: 125px;
+  text-align: center;
 }
+.item i {
+  font-size: 125px;
+}
+
 .itemNotUsed {
-	display: none;
+  display: none;
 }
 
 h2 {
-	margin: 15px auto;
-	width: 200px;
-	font-size: 3em;
-	text-align: center;
-	cursor: pointer;
-	border: 5px solid var(--second-color);
-	border-radius: 10px;
+  margin: 15px auto;
+  width: 200px;
+  font-size: 3em;
+  text-align: center;
+  cursor: pointer;
+  border: 5px solid #ee6c4d;
+  border-radius: 10px;
 }
 h2:hover {
-	background-color: var(--hover-back-color);
+  background-color: #293259;
 }
+
+/*# sourceMappingURL=styles.css.map */
